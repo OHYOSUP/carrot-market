@@ -1,4 +1,6 @@
-import Layout from "@/components/Layout";
+import Button from "@/components/button";
+import Layout from "@/components/layout";
+import Textarea from "@/components/textarea";
 import type { NextPage } from "next";
 
 const Upload: NextPage = () => {
@@ -62,18 +64,11 @@ const Upload: NextPage = () => {
           </div>
         </div>
         <div>
-          <label className="mb-1 block text-sm font-medium text-gray-700">
-            Description
-          </label>
+          <label className="mb-1 block text-sm font-medium text-gray-700"></label>
 
-          <textarea
-            className="mt-1 shadow-sm w-full focus:ring-1 focus:ring-orange-500 rounded-md border-gray-300 focus:border-orange-500"
-            rows={4}
-          />
+          <Textarea placeholder="Description"></Textarea>
         </div>
-        <button className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 border border-tansparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none">
-          Upload product
-        </button>
+        <Button text="Upload product"></Button>
       </div>
     </Layout>
   );

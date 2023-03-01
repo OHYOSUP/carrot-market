@@ -1,4 +1,5 @@
-import Layout from "@/components/Layout";
+import Chat from "@/components/chat";
+import Layout from "@/components/layout";
 import { NextPage } from "next";
 
 const StreamDetail: NextPage = () => {
@@ -10,54 +11,12 @@ const StreamDetail: NextPage = () => {
         Let's make a deal
       </h3>
       <div className="py-10 pb-16 h-[50vh] overflow-y-scroll px-4 space-y-4">
-        <div className="flex items-start space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            미쳤어
-          </p>
-        </div>
-        <div className="flex flex-row-reverse items-start space-x-reverse space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            Hi how much are you selling them for?
-          </p>
-        </div>
-        <div className="flex items-start space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            미쳤어
-          </p>
-        </div>
-        <div className="flex flex-row-reverse items-start space-x-reverse space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            Hi how much are you selling them for?
-          </p>
-        </div>
-        <div className="flex items-start space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            미쳤어
-          </p>
-        </div>
-        <div className="flex flex-row-reverse items-start space-x-reverse space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            Hi how much are you selling them for?
-          </p>
-        </div>
-        <div className="flex items-start space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            미쳤어
-          </p>
-        </div>
-        <div className="flex flex-row-reverse items-start space-x-reverse space-x-2">
-          <div className="w-8 h-8 rounded-full bg-slate-400" />
-          <p className="w-1/2 text-sm text-gray-700 p-2 border border-gray-300 rounded-md">
-            Hi how much are you selling them for?
-          </p>
-        </div>
+        <Chat message="와우 이거 얼마인가요?" reverse></Chat>
+        <Chat message="혹시 사고 마음에 안들면 교환 환불 가능한가요?" reverse></Chat>
+        <Chat message="이거 다음주에 사고싶은데 언제까지 판매하나요?" reverse></Chat>
+        <Chat message="세일 언제까지하나요? 재방도 하시나요?" reverse></Chat>
+        <Chat message="이쁘다 사고싶당" reverse></Chat>
+        <Chat message="좋아요 누르고 갑니다~~~" reverse></Chat>
       </div>
       <div className= "fixed w-full mx-auto max-w-md bottom-2 inset-x-0">
         <div className="flex relative items-center">
